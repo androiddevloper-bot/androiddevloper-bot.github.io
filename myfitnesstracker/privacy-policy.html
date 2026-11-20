@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for MyFitnessTracker (com.novacore.myfitnesstracker) by NovaCORE." />
+  <title>Privacy Policy — MyFitnessTracker (NovaCORE)</title>
+  <style>
+    :root {
+      --bg: #080c16;
+      --surface: #0f1626;
+      --surface-elevated: #151f33;
+      --border: #23304a;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-body: #cbd5e1;
+      --accent: #3b82f6;
+      --accent-soft: #60a5fa;
+      --accent-glow: rgba(59, 130, 246, 0.14);
+      --code-bg: #1b273e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif;
+      background: radial-gradient(circle at top center, #111c33 0%, var(--bg) 55%);
+      color: var(--text-primary);
+      line-height: 1.65;
+      margin: 0;
+      padding: 32px 16px 56px;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.16), rgba(15, 22, 38, 0.9));
+      border: 1px solid rgba(96, 165, 250, 0.3);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 4px 10px;
+      border-radius: 8px;
+      background: var(--accent-glow);
+      color: var(--accent-soft);
+      border: 1px solid rgba(96, 165, 250, 0.25);
+    }
+
+    h1 {
+      font-size: 1.85rem;
+      line-height: 1.25;
+      color: #ffffff;
+      margin: 0 0 10px;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    .meta a,
+    a {
+      color: var(--accent-soft);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .glance-card {
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin-bottom: 22px;
+    }
+
+    .glance-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 10px;
+    }
+
+    .glance-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 10px 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .glance-grid li {
+      font-size: 0.9rem;
+      color: var(--text-body);
+      padding-left: 18px;
+      position: relative;
+      margin: 0;
+    }
+
+    .glance-grid li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--accent-soft);
+      font-weight: 700;
+    }
+
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .search-input {
+      flex: 1 1 260px;
+      background: var(--bg);
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 0.92rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+    }
+
+    .btn {
+      background: var(--surface-elevated);
+      color: var(--text-primary);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .btn:hover {
+      border-color: var(--accent-soft);
+      background: #1c2942;
+    }
+
+    .toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .toc a {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      padding: 5px 10px;
+      border-radius: 8px;
+    }
+
+    .toc a:hover {
+      color: #ffffff;
+      border-color: var(--accent-soft);
+      text-decoration: none;
+    }
+
+    section {
+      padding: 18px 20px;
+      margin-bottom: 16px;
+      background: rgba(21, 31, 51, 0.45);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
+
+    section.hidden {
+      display: none;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      color: var(--accent-soft);
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--text-body);
+      font-size: 0.95rem;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 8px 0 12px 20px;
+      padding: 0;
+      color: var(--text-body);
+      font-size: 0.94rem;
+    }
+
+    ul:last-child {
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    code {
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-size: 0.85em;
+      color: #93c5fd;
+    }
+
+    .callout {
+      background: rgba(59, 130, 246, 0.08);
+      border-left: 3px solid var(--accent-soft);
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 10px;
+      font-size: 0.92rem;
+      color: var(--text-primary);
+    }
+
+    .empty-state {
+      display: none;
+      text-align: center;
+      padding: 28px;
+      color: var(--text-secondary);
+      border: 1px dashed var(--border);
+      border-radius: 14px;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 20px 16px;
+      }
+      .hero {
+        padding: 18px;
+      }
+      h1 {
+        font-size: 1.45rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #111827;
+        padding: 0;
+      }
+      main {
+        box-shadow: none;
+        border: none;
+        background: #ffffff;
+        padding: 0;
+      }
+      .hero,
+      .glance-card,
+      section {
+        background: #ffffff;
+        border: 1px solid #d1d5db;
+        color: #111827;
+        break-inside: avoid;
+      }
+      h1, h2, .glance-title, .callout {
+        color: #111827;
+      }
+      p, ul, li, .meta {
+        color: #374151;
+      }
+      code {
+        background: #f3f4f6;
+        color: #1f2937;
+      }
+      .toolbar,
+      .toc {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="badge-row">
+        <span class="badge">NovaCORE</span>
+        <span class="badge">Policy v2.0</span>
+        <span class="badge">Effective November 20, 2026</span>
+      </div>
+      <h1>Privacy Policy — MyFitnessTracker</h1>
+      <p class="meta">
+        Developer: <strong>NovaCORE</strong> · Package: <code>com.novacore.myfitnesstracker</code><br />
+        Jurisdiction: West Bengal, India · Contact:
+        <a href="mailto:developersupport@gmail.com">developersupport@gmail.com</a>
+      </p>
+    </header>
+
+    <div class="glance-card">
+      <div class="glance-title">Privacy at a Glance</div>
+      <ul class="glance-grid">
+        <li>Your meals, water, weight, workout &amp; symptom logs stay stored locally on your device.</li>
+        <li>Health Connect permissions are strictly opt-in, Limited Use compliant, and revocable anytime.</li>
+        <li>NovaCORE Pro subscriptions are processed securely by Google Play — we never see card details.</li>
+        <li>We never sell, rent, or use your personal or health data for advertising.</li>
+      </ul>
+    </div>
+
+    <div class="toolbar">
+      <input
+        id="policySearch"
+        class="search-input"
+        type="search"
+        placeholder="Filter policy (e.g. Health Connect, Billing, Delete, Firebase)..."
+        aria-label="Filter privacy policy sections"
+      />
+      <button type="button" class="btn" id="copyEmailBtn">Copy Support Email</button>
+      <button type="button" class="btn" onclick="window.print()">Print / Save PDF</button>
+    </div>
+
+    <nav class="toc" aria-label="Policy sections">
+      <a href="#overview">1. Overview</a>
+      <a href="#collected">2. Data Collected</a>
+      <a href="#health-connect">3. Health Connect</a>
+      <a href="#wearables">4. Wearables</a>
+      <a href="#permissions">5. Permissions</a>
+      <a href="#billing">6. Play Billing</a>
+      <a href="#firebase">7. Auth &amp; Sharing</a>
+      <a href="#retention">8. Retention &amp; Deletion</a>
+      <a href="#rights">9. Your Rights</a>
+      <a href="#children">10. Children</a>
+      <a href="#medical">11. Medical Disclaimer</a>
+      <a href="#contact">12. Contact</a>
+    </nav>
+
+    <div id="emptyState" class="empty-state">
+      No matching sections found. Try searching <strong>Health Connect</strong>, <strong>Billing</strong>, <strong>Delete</strong>, or clear the search box.
+    </div>
+
+    <section id="overview" class="policy-section">
+      <h2>1. Overview &amp; Local-First Architecture</h2>
+      <p>MyFitnessTracker ("the App", package <code>com.novacore.myfitnesstracker</code>), developed by <strong>NovaCORE</strong>, is a personal nutrition, fitness, symptom-correlation, and wearable telemetry tracker built on a local-first privacy architecture.</p>
+      <p>Your daily food diaries, water intake, weight history, exercise workouts, and symptom micro-logs are stored locally on your Android device in an SQLite Room database and Jetpack DataStore preferences, protected by Android's private app sandbox and your device's hardware encryption.</p>
+    </section>
+
+    <section id="collected" class="policy-section">
+      <h2>2. Information You Provide</h2>
+      <p>When using the App, you may choose to enter or configure:</p>
+      <ul>
+        <li><strong>Profile &amp; Goals:</strong> Display name, daily nutrition/activity goals, optional profile avatar, and measurement unit preferences.</li>
+        <li><strong>Wellness &amp; Nutrition Logs:</strong> Meals, barcode/AI food scans, water intake, weight entries, workouts, blood glucose logs, and symptom records.</li>
+        <li><strong>Account Credentials (Optional):</strong> If you sign in, your email address and display profile are handled via Google Firebase Authentication. Your password is never visible to or stored by NovaCORE.</li>
+      </ul>
+    </section>
+
+    <section id="health-connect" class="policy-section">
+      <h2>3. Google Health Connect &amp; Wearable Telemetry (Limited Use)</h2>
+      <p>When you explicitly grant permission through Android's official Health Connect consent prompt, MyFitnessTracker reads (and, where enabled, writes weight records) solely to power your unified health dashboard, nutrition correlations, and synced metrics screen.</p>
+      <p>The App declares and uses only the following Health Connect permissions:</p>
+      <ul>
+        <li><strong>Activity &amp; Energy:</strong> Steps (<code>READ_STEPS</code>), Exercise Sessions (<code>READ_EXERCISE</code>), Active Calories Burned (<code>READ_ACTIVE_CALORIES_BURNED</code>), and Basal Metabolic Rate (<code>READ_BASAL_METABOLIC_RATE</code>).</li>
+        <li><strong>Body Measurements:</strong> Body Weight (<code>READ_WEIGHT</code>, <code>WRITE_WEIGHT</code>) and Body Fat Percentage (<code>READ_BODY_FAT</code>).</li>
+        <li><strong>Cardiovascular &amp; Vitals:</strong> Heart Rate (<code>READ_HEART_RATE</code>), Blood Pressure (<code>READ_BLOOD_PRESSURE</code>), and Blood Oxygen SpO2 (<code>READ_OXYGEN_SATURATION</code>).</li>
+        <li><strong>Sleep &amp; Metabolic:</strong> Sleep Stages &amp; Duration (<code>READ_SLEEP</code>), Blood Glucose (<code>READ_BLOOD_GLUCOSE</code>), and Historical Health Data (<code>READ_HEALTH_DATA_HISTORY</code>).</li>
+      </ul>
+      <div class="callout">
+        <strong>Google Health Connect Limited Use Disclosure:</strong> The use of information received from Health Connect strictly adheres to the Google Play Health Connect Permissions Policy, including the Limited Use requirements. We never sell, rent, transfer, or use Health Connect data for advertising, data brokering, or credit/insurance/employment eligibility decisions.
+      </div>
+    </section>
+
+    <section id="wearables" class="policy-section">
+      <h2>4. Third-Party Fitness &amp; Wearable Integrations (OAuth 2.0)</h2>
+      <p>You may optionally link external fitness platforms—such as Garmin Connect, Withings Scale, Oura, Whoop, or MapMyFitness—via OAuth 2.0 deep linking (<code>myfitnesstracker://oauth</code>).</p>
+      <p>Authorization tokens are exchanged over HTTPS and stored locally using hardware-backed AES-256 GCM encryption via Android Keystore (<code>EncryptedTokenStorage</code>). Disconnecting any integration in <strong>Connected Devices</strong> immediately removes its stored access tokens from your device.</p>
+    </section>
+
+    <section id="permissions" class="policy-section">
+      <h2>5. Device Permissions &amp; Feature Usage</h2>
+      <p>MyFitnessTracker requests Android permissions only to support features you actively enable:</p>
+      <ul>
+        <li><strong>Camera (<code>CAMERA</code>):</strong> Used strictly for scanning packaged food barcodes and capturing meal photos in the Meal Scanner.</li>
+        <li><strong>Microphone (<code>RECORD_AUDIO</code>):</strong> Used strictly when you tap Voice Log to transcribe spoken meal entries.</li>
+        <li><strong>Notifications &amp; Alarms (<code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>WAKE_LOCK</code>):</strong> Used to deliver configured meal, hydration, inactivity, and report reminders and reschedule them after device restarts.</li>
+        <li><strong>Vibration (<code>VIBRATE</code>):</strong> Optional tactile haptic feedback when enabled in settings.</li>
+        <li><strong>Local Media &amp; FileProvider:</strong> Selected profile avatars stay in app-private storage (<code>filesDir/avatars</code>). Exported clinical PDFs or CSV/JSON files are shared only when you explicitly initiate a share action via Android <code>FileProvider</code>.</li>
+      </ul>
+    </section>
+
+    <section id="billing" class="policy-section">
+      <h2>6. Subscriptions &amp; Google Play Billing</h2>
+      <p>Optional <strong>NovaCORE Pro</strong> subscriptions (including Monthly and Annual plans and any eligible introductory free trials) are processed exclusively through Google Play Billing (<code>com.android.vending.BILLING</code>).</p>
+      <ul>
+        <li>NovaCORE never collects, sees, or stores your credit card numbers, bank account details, or billing address.</li>
+        <li>Google Play shares only non-sensitive purchase tokens, product IDs, and subscription entitlement status so the App can unlock Pro features and support <strong>Restore Purchases</strong>.</li>
+        <li>Your membership tier (<code>FREE TIER</code> or <code>PRO MEMBER</code>) is cached locally via Jetpack DataStore for fast offline verification and refreshed automatically from Google Play.</li>
+      </ul>
+    </section>
+
+    <section id="firebase" class="policy-section">
+      <h2>7. Account Authentication &amp; Service Providers</h2>
+      <p>We do not sell personal data. Limited technical or request data is processed only by infrastructure providers required to deliver features you choose to use:</p>
+      <ul>
+        <li><strong>Google Firebase:</strong> Handles optional Email/Password or Google Sign-In authentication (storing display name, email address, and account UID) and diagnostic/crash telemetry (app version, device model, and crash traces) to keep the App stable.</li>
+        <li><strong>Google Play Billing:</strong> Processes subscription checkout, renewal verification, and purchase restoration.</li>
+        <li><strong>Nutrition / AI Lookup Services:</strong> When you look up a barcode or use AI food analysis, the food query, barcode, or meal image is transmitted over encrypted HTTPS solely to return nutritional estimates.</li>
+        <li><strong>Linked Wearables:</strong> External platforms you explicitly authorize on Connected Devices.</li>
+      </ul>
+    </section>
+
+    <section id="retention" class="policy-section">
+      <h2>8. Data Retention, Export &amp; Account Deletion</h2>
+      <p>You maintain full control over your logs and account data:</p>
+      <ul>
+        <li><strong>Export Anytime:</strong> Export your nutrition, weight, workout, and symptom history in JSON or CSV format from <strong>Settings &amp; More</strong>.</li>
+        <li><strong>Clear Temporary Cache:</strong> Clear cached image/sync buffers inside <strong>Settings &amp; More → Clear Cache</strong> without deleting your logged health history.</li>
+        <li><strong>Local Deletion:</strong> Signing out preserves local device logs. Use <strong>Reset All Data</strong> in settings or uninstall the App to permanently erase all locally stored databases and preferences.</li>
+        <li><strong>Account &amp; Cloud Deletion:</strong> To permanently delete your Firebase Authentication account and any associated cloud records, email <a href="mailto:developersupport@gmail.com">developersupport@gmail.com</a> from your registered email address with the subject <em>"Account Deletion Request"</em>. Verified requests are completed within <strong>30 days</strong>.</li>
+        <li><strong>Revoke Health Connect:</strong> Modify or revoke permissions anytime in Android System Settings &rarr; Security &amp; Privacy &rarr; Health Connect.</li>
+      </ul>
+    </section>
+
+    <section id="rights" class="policy-section">
+      <h2>9. Your Privacy Rights &amp; Choices</h2>
+      <p>Depending on your location (including under India's Digital Personal Data Protection framework, GDPR, or CCPA/CPRA), you may request access to, correction of, portability/export of, or deletion of your personal data, withdraw consent at any time, or lodge a complaint with your applicable data protection authority.</p>
+    </section>
+
+    <section id="children" class="policy-section">
+      <h2>10. Children’s Privacy</h2>
+      <p>MyFitnessTracker is not directed to children under 13 (or the minimum digital consent age required in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has provided personal data through the App, please contact us and we will promptly delete it.</p>
+    </section>
+
+    <section id="medical" class="policy-section">
+      <h2>11. Medical &amp; Clinical Disclaimer</h2>
+      <p>MyFitnessTracker is designed solely for personal fitness, nutrition, wellness tracking, and informational summaries. It is not a medical device and does not diagnose, treat, cure, or prevent any disease or health condition. Always consult a qualified healthcare professional before making dietary, exercise, or medical decisions.</p>
+    </section>
+
+    <section id="contact" class="policy-section">
+      <h2>12. Policy Updates &amp; Contact</h2>
+      <p>We may update this Privacy Policy as features evolve or legal requirements change. Material changes will be reflected by updating the effective date above and inside <strong>Settings &amp; More → Privacy Policy</strong>.</p>
+      <p>For privacy questions, Health Connect inquiries, or account deletion requests, contact <strong>NovaCORE Support</strong> at <a href="mailto:developersupport@gmail.com">developersupport@gmail.com</a>.</p>
+    </section>
+
+    <footer>
+      &copy; 2026 NovaCORE · MyFitnessTracker (<code>com.novacore.myfitnesstracker</code>) · Policy v2.0
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      const searchInput = document.getElementById('policySearch');
+      const sections = Array.from(document.querySelectorAll('.policy-section'));
+      const emptyState = document.getElementById('emptyState');
+      const copyBtn = document.getElementById('copyEmailBtn');
+      const email = 'developersupport@gmail.com';
+
+      if (searchInput) {
+        searchInput.addEventListener('input', function () {
+          const query = searchInput.value.trim().toLowerCase();
+          let visibleCount = 0;
+
+          sections.forEach(function (section) {
+            const matches = !query || section.textContent.toLowerCase().includes(query);
+            section.classList.toggle('hidden', !matches);
+            if (matches) visibleCount++;
+          });
+
+          emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+        });
+      }
+
+      if (copyBtn && navigator.clipboard) {
+        copyBtn.addEventListener('click', function () {
+          navigator.clipboard.writeText(email).then(function () {
+            const original = copyBtn.textContent;
+            copyBtn.textContent = 'Copied!';
+            setTimeout(function () {
+              copyBtn.textContent = original;
+            }, 1800);
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
