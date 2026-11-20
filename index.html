@@ -1,80 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novacore | Mobile Apps</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            background-color: #0f172a;
-            color: #f8fafc;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding-top: 50px;
-        }
-        h1 {
-            font-size: 3rem;
-            color: #38bdf8;
-            margin-bottom: 10px;
-        }
-        .tagline {
-            color: #94a3b8;
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-        }
-        .card {
-            background-color: #1e293b;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-            text-align: left;
-        }
-        .badge {
-            background-color: #0284c7;
-            padding: 4px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-        }
-        .contact {
-            background-color: #1e293b;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 40px;
-        }
-        a {
-            color: #38bdf8;
-            text-decoration: none;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NovaCORE Mobile App Development Studio — Android apps including MyFitnessTracker, Bangla Calendar, and Currency Converter." />
+  <meta name="theme-color" content="#080c16" />
+  <meta property="og:title" content="NovaCORE | Mobile App Development Studio" />
+  <meta property="og:description" content="Android utility and health tracking apps built by NovaCORE." />
+  <title>NovaCORE | Mobile Apps</title>
+  <style>
+    :root {
+      --bg: #080c16;
+      --surface: #0f1626;
+      --surface-elevated: #151f33;
+      --border: #23304a;
+      --text-primary: #f1f5f9;
+      --text-secondary: #94a3b8;
+      --text-body: #cbd5e1;
+      --accent: #38bdf8;
+      --accent-blue: #3b82f6;
+      --accent-glow: rgba(56, 189, 248, 0.14);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Inter, sans-serif;
+      background: radial-gradient(circle at top center, #111c33 0%, var(--bg) 55%);
+      color: var(--text-primary);
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px 16px 56px;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 36px 24px;
+      margin-bottom: 28px;
+      background: linear-gradient(135deg, rgba(56, 189, 248, 0.14), rgba(15, 22, 38, 0.92));
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    }
+
+    .studio-pill {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-glow);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      padding: 4px 12px;
+      border-radius: 8px;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.15;
+      color: #ffffff;
+      margin: 0 0 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-secondary);
+      margin: 0 0 14px 4px;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .card:hover {
+      border-color: rgba(56, 189, 248, 0.45);
+      transform: translateY(-2px);
+    }
+
+    .card.featured {
+      grid-column: 1 / -1;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), var(--surface));
+      border-color: rgba(59, 130, 246, 0.35);
+    }
+
+    .card-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.14);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      padding: 3px 9px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .badge.subtle {
+      background: var(--surface-elevated);
+      color: var(--text-secondary);
+      border-color: var(--border);
+    }
+
+    h2 {
+      font-size: 1.28rem;
+      color: #ffffff;
+      margin: 0 0 8px;
+    }
+
+    .card p {
+      color: var(--text-body);
+      font-size: 0.94rem;
+      margin: 0 0 16px;
+    }
+
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: auto;
+    }
+
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--surface-elevated);
+      border: 1px solid var(--border);
+      padding: 8px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .btn-link:hover {
+      border-color: var(--accent);
+      background: #1c2942;
+    }
+
+    .contact {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .contact h3 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    .contact p {
+      color: var(--text-body);
+      font-size: 0.94rem;
+      margin: 0 0 16px;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    button.btn-link {
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .hero {
+        padding: 26px 18px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Novacore</h1>
-        <p class="tagline">Mobile App Development Studio</p>
-        
-        <div class="card">
-            <span class="badge">Android App</span>
-            <h2>Bangla Calendar</h2>
-            <p>An elegant, highly customizable event and calendar management tool designed to track important dates seamlessly.</p>
-        </div>
+  <div class="container">
+    <header class="hero">
+      <span class="studio-pill">Mobile App Development Studio</span>
+      <h1>NovaCORE</h1>
+      <p class="tagline">
+        Privacy-first Android applications crafted for daily utility, personal wellness, and clean design.
+      </p>
+    </header>
 
-        <div class="card">
-            <span class="badge">Android App</span>
-            <h2>Currency Converter</h2>
-            <p>A fast, lightweight application for real-time currency conversions and daily financial updates.</p>
-        </div>
+    <p class="section-label">Published &amp; Upcoming Apps</p>
 
-        <div class="contact">
-            <h3>Developer Support</h3>
-            <p>Need assistance? Reach out to us via email:</p>
-            <p><a href="mailto:devlopersupport@gmail.com">devlopersupport@gmail.com</a></p>
+    <main class="apps-grid">
+      <article class="card featured">
+        <div>
+          <div class="card-top">
+            <span class="badge">Android App</span>
+            <span class="badge subtle">Health Connect</span>
+            <span class="badge subtle">Local-First Privacy</span>
+          </div>
+          <h2>MyFitnessTracker</h2>
+          <p>
+            Comprehensive nutrition, hydration, workout, symptom-correlation, and Health Connect wellness tracker built on a local-first Android architecture.
+          </p>
         </div>
-    </div>
+        <div class="card-actions">
+          <a class="btn-link" href="/myfitnesstracker/privacy-policy.html">Privacy Policy &rarr;</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="card-top">
+            <span class="badge">Android App</span>
+          </div>
+          <h2>Bangla Calendar</h2>
+          <p>
+            An elegant, highly customizable event and calendar management tool designed to track important dates seamlessly.
+          </p>
+        </div>
+      </article>
+
+      <article class="card">
+        <div>
+          <div class="card-top">
+            <span class="badge">Android App</span>
+          </div>
+          <h2>Currency Converter</h2>
+          <p>
+            A fast, lightweight application for real-time currency conversions and daily financial updates.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <section class="contact" aria-label="Developer Support">
+      <h3>Developer Support</h3>
+      <p>
+        Need app assistance, have a Health Connect inquiry, or want to request account/data deletion? Contact our team directly:
+      </p>
+      <div class="contact-actions">
+        <a class="btn-link" href="mailto:devlopersupport@gmail.com">devlopersupport@gmail.com</a>
+        <button type="button" class="btn-link" id="copyEmailBtn">Copy Email</button>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2026 NovaCORE · <a href="/myfitnesstracker/privacy-policy.html">MyFitnessTracker Privacy Policy</a>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var copyBtn = document.getElementById('copyEmailBtn');
+      var email = 'devlopersupport@gmail.com';
+      if (copyBtn && navigator.clipboard) {
+        copyBtn.addEventListener('click', function () {
+          navigator.clipboard.writeText(email).then(function () {
+            copyBtn.textContent = 'Copied!';
+            setTimeout(function () {
+              copyBtn.textContent = 'Copy Email';
+            }, 1800);
+          });
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
