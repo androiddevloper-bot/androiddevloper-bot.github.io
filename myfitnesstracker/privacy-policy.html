@@ -462,10 +462,11 @@
       <h2>8. Data Retention, Export &amp; Account Deletion</h2>
       <p>You maintain full control over your logs and account data:</p>
       <ul>
-        <li><strong>Export Anytime:</strong> Export your nutrition, weight, workout, and symptom history in JSON or CSV format from <strong>Settings &amp; More</strong>.</li>
-        <li><strong>Clear Temporary Cache:</strong> Clear cached image/sync buffers inside <strong>Settings &amp; More → Clear Cache</strong> without deleting your logged health history.</li>
-        <li><strong>Local Deletion:</strong> Signing out preserves local device logs. Use <strong>Reset All Data</strong> in settings or uninstall the App to permanently erase all locally stored databases and preferences.</li>
-        <li><strong>Account &amp; Cloud Deletion:</strong> To permanently delete your Firebase Authentication account and any associated cloud records, email <a href="mailto:developersupport@gmail.com">developersupport@gmail.com</a> from your registered email address with the subject <em>"Account Deletion Request"</em>. Verified requests are completed within <strong>30 days</strong>.</li>
+        <li><strong>Export Anytime:</strong> Generate and share a clinical PDF summary of your health metrics from <strong>Settings &amp; More &rarr; Export Your Data</strong>.</li>
+        <li><strong>Clear Temporary Cache:</strong> Clear cached image/sync buffers inside <strong>Settings &amp; More &rarr; Clear Cache</strong> without deleting your logged health history.</li>
+        <li><strong>Reset Local Data:</strong> Signing out keeps local logs for when you sign back in with the same account. Use <strong>Settings &amp; More &rarr; Reset All Data</strong> or uninstall the App to permanently erase all locally stored databases, avatars, and wearable tokens.</li>
+        <li><strong>Delete Account (In-App):</strong> Go to <strong>Settings &amp; More &rarr; Privacy, Security &amp; Data &rarr; Delete Account</strong> to permanently delete your Firebase Authentication account (email, display name, and UID) and immediately wipe all local device data.</li>
+        <li><strong>Delete Account (Web / Email):</strong> If you have uninstalled the App, visit our <a href="https://androiddevloper-bot.github.io/myfitnesstracker/delete-account.html">Account Deletion page</a> or email <a href="mailto:devlopersupport@gmail.com">devlopersupport@gmail.com</a> from your registered email address with the subject <em>"Delete MyFitnessTracker Account"</em>. Verified requests are processed within <strong>7 days</strong>.</li>
         <li><strong>Revoke Health Connect:</strong> Modify or revoke permissions anytime in Android System Settings &rarr; Security &amp; Privacy &rarr; Health Connect.</li>
       </ul>
     </section>
@@ -488,7 +489,7 @@
     <section id="contact" class="policy-section">
       <h2>12. Policy Updates &amp; Contact</h2>
       <p>We may update this Privacy Policy as features evolve or legal requirements change. Material changes will be reflected by updating the effective date above and inside <strong>Settings &amp; More → Privacy Policy</strong>.</p>
-      <p>For privacy questions, Health Connect inquiries, or account deletion requests, contact <strong>NovaCORE Support</strong> at <a href="mailto:developersupport@gmail.com">developersupport@gmail.com</a>.</p>
+      <p>For privacy questions, Health Connect inquiries, or account deletion requests, contact <strong>NovaCORE Support</strong> at <a href="mailto:devlopersupport@gmail.com">devlopersupport@gmail.com</a>.</p>
     </section>
 
     <footer>
@@ -502,7 +503,7 @@
       const sections = Array.from(document.querySelectorAll('.policy-section'));
       const emptyState = document.getElementById('emptyState');
       const copyBtn = document.getElementById('copyEmailBtn');
-      const email = 'developersupport@gmail.com';
+      const email = 'devlopersupport@gmail.com';
 
       if (searchInput) {
         searchInput.addEventListener('input', function () {
